@@ -1,0 +1,35 @@
+.dumbbell-icon{
+    width: 320px;
+}
+
+.dumbbell-icon path{
+    fill: transparent;
+    stroke: var(--color-blue-turquoise);
+    stroke-dasharray: 545;
+    stroke-dashoffset: 0;
+}
+
+.dumbbell-icon:hover path{
+    cursor: pointer;
+    animation: dumbbell-animation 2s linear forwards;
+}
+
+@keyframes dumbbell-animation{
+    0%{
+        stroke-dashoffset: 0;
+    }
+
+    40%{
+        stroke-dashoffset: 545;
+    }
+
+    80%{
+        stroke-dashoffset: 1090;
+        fill: transparent;
+    }
+
+    100%{
+        stroke-dashoffset: 1090;
+        fill: var(--color-blue-turquoise);
+    }
+}

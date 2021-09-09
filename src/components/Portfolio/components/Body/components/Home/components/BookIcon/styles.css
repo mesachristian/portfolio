@@ -1,0 +1,35 @@
+.book-icon{
+    width: 320px;
+}
+
+.book-icon path{
+    fill: transparent;
+    stroke: var(--color-blue-turquoise);
+    stroke-dasharray: 587;
+    stroke-dashoffset: 0;
+}
+
+.book-icon:hover path{
+    cursor: pointer;
+    animation: book-animation 2s linear forwards;
+}
+
+@keyframes book-animation{
+    0%{
+        stroke-dashoffset: 0;
+    }
+
+    40%{
+        stroke-dashoffset: 587;
+    }
+
+    80%{
+        stroke-dashoffset: 1174;
+        fill: transparent;
+    }
+
+    100%{
+        stroke-dashoffset: 1174;
+        fill: var(--color-blue-turquoise);
+    }
+}

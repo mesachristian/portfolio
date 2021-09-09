@@ -1,0 +1,28 @@
+.tilt-root{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    will-change: transform;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tilt-child {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    transform: translateZ(30px); 
+    background-color: none;
+}
+  
+  
+.totally-centered {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

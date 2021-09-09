@@ -1,0 +1,36 @@
+.computer-icon{
+    width: 320px;
+}
+
+.computer-icon path{
+    fill: transparent;
+    stroke: 10;
+    stroke: var(--color-blue-turquoise);
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 0;
+}
+
+.computer-icon:hover path{
+    cursor: pointer;
+    animation: computer-animation 2s linear forwards;
+}
+
+@keyframes computer-animation{
+    0%{
+        stroke-dashoffset: 0;
+    }
+
+    40%{
+        stroke-dashoffset: 2000;
+    }
+
+    80%{
+        stroke-dashoffset: 4000;
+        fill: transparent;
+    }
+
+    100%{
+        stroke-dashoffset: 4000;
+        fill: var(--color-blue-turquoise);
+    }
+}
